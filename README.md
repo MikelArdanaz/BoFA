@@ -18,4 +18,4 @@ reached, the player is scored on her/his efforts.
 - [Ole Stobbe Nielsen](https://github.com/olestobbe)
 - [Marc Delaunay](https://github.com/DelaMarc)
 - [Mikel Ardanaz](https://github.com/MikelArdanaz)
-- Richard Banyi
+- [Richard Banyi](https://github.com/richban)
