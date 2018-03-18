@@ -32,3 +32,12 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+#Created by OS (macOS)
+*.DS_Store
+*._.DS_Store
+*~
+*._*
+
+#Vim Temps
+*.swp
