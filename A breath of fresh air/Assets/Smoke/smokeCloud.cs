@@ -7,22 +7,34 @@ public class smokeCloud : MonoBehaviour {
 	public float _speed = 1f;
 	public float _smokeDamage;
 
-	GameObject[] _goalLocations;
+	//GameObject[] _goalLocations;
 	Vector3 _destination;
+	float _xMin;
+	float _xMax;
+	float _zMin;
+	float _zMax;
 
 	// Use this for initialization
 	void Start () {
-		_goalLocations = GameObject.FindGameObjectsWithTag("smokeGoal");
-		_destination = _goalLocations [Random.Range (0, _goalLocations.Length)].transform.position;
-	}
+		GameObject[] bounds;
+		float actualY;
 
-	/*void OnTriggerEnter(Collider other){
-		Debug.Log ("enter trigger");
+		bounds = GameObject.FindGameObjectsWithTag ("fieldBound");
+		if (bounds [0].transform.position.x < bounds [1].transform.position.x) {
+			_xMin = bounds [0].transform.position.x;
+			_xMax = bounds [1].transform.position.x;
+			_zMin = bounds [0].transform.position.z;
+			_zMax = bounds [1].transform.position.z;
+		} else {
+			_xMin = bounds [1].transform.position.x;
+			_xMax = bounds [0].transform.position.x;
+			_zMin = bounds [1].transform.position.z;
+			_zMax = bounds [0].transform.position.z;
+		}
+		actualY = transform.position.y;
+		_destination = new Vector3 (Random.Range (_xMin, _xMax), 0, Random.Range (_zMin, _zMax));
+		transform.position = new Vector3(_destination.x, actualY, _destination.z);
 	}
-
-	void OnTriggerExit(Collider other){
-		Debug.Log ("exit trigger");
-	}*/
 
 	void OnTriggerStay(Collider other){
 		NPC npc;
@@ -40,7 +52,7 @@ public class smokeCloud : MonoBehaviour {
 		distance = _destination - transform.position;
 		distance = new Vector3 (_destination.x - transform.position.x, 0, _destination.z - transform.position.z);
 		if (distance.magnitude < 0.5f) {
-			_destination = _goalLocations [Random.Range (0, _goalLocations.Length)].transform.position;
+			_destination = new Vector3 (Random.Range (_xMin, _xMax), 0, Random.Range (_zMin, _zMax));
 		} else {
 			transform.Translate (distance.normalized * Time.deltaTime * _speed);
 		}
