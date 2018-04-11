@@ -49,7 +49,7 @@ public class smokeCloud : MonoBehaviour {
 	void LateUpdate () {
 		Vector3 distance;
 
-		distance = _destination - transform.position;
+		//distance = _destination - transform.position;
 		distance = new Vector3 (_destination.x - transform.position.x, 0, _destination.z - transform.position.z);
 		if (distance.magnitude < 0.5f) {
 			_destination = new Vector3 (Random.Range (_xMin, _xMax), 0, Random.Range (_zMin, _zMax));
