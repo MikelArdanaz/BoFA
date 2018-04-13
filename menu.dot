@@ -1,0 +1,10 @@
+digraph menu{
+   Menu->Play;
+   Menu->Quit;
+   Play->Pause;
+   Play->Dead;
+   Play->Menu[label="not an endless game,Win"];
+   Pause->Play;
+   Pause->Quit;
+   Dead->Menu;
+}

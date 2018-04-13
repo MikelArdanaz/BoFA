@@ -1,0 +1,24 @@
+digraph menu{
+   Menu->Play;
+   Menu->Quit;
+   Play->Pause;
+   Play->Dead;
+   Play->Menu[label="not an endless game,Win"];
+   Pause->Play;
+   Pause->Quit;
+   Dead->Menu;
+}
+digraph players{
+   Idle->Moving;
+   Moving->Idle;
+   Idle->Inventory[label="You can´t move the player when you are looking the inventory"];
+   Inventory->Idle;
+   Inventory->Powered;
+   Powered->Idle;
+   Idle->Lose;
+   Moving->Lose;
+   Inventory->Lose;
+   Powered->Lose;
+   Idle->Pause;
+   Pause->Idle;
+}

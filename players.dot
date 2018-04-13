@@ -1,0 +1,14 @@
+digraph players{
+   Idle->Moving;
+   Moving->Idle;
+   Idle->Inventory[label="You can´t move the player when you are looking the inventory"];
+   Inventory->Idle;
+   Inventory->Powered;
+   Powered->Idle;
+   Idle->Lose;
+   Moving->Lose;
+   Inventory->Lose;
+   Powered->Lose;
+   Idle->Pause;
+   Pause->Idle;
+}
