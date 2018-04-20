@@ -3,27 +3,44 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour {
 
-	public float panSpeed = 0.01f; 
+	public float panSpeed = 30f; 
 	public Vector2 panLimit; 
 	// Update is called once per frame
 	void Update () {
 		Vector3 pos = transform.position;
-		if(Input.GetKey("w")) 
+		if(Input.GetKeyUp("w")) 
 		{
-			pos.z += panSpeed + Time.deltaTime;
+			pos.z += panSpeed;
 		}
-		if(Input.GetKey("a")) 
+		if(Input.GetKeyUp("a")) 
 		{
-			pos.x -= panSpeed + Time.deltaTime;
+			pos.x -= panSpeed;
 		}
-		if(Input.GetKey("s")) {
+		if(Input.GetKeyUp("s")) {
 
-			pos.z -= panSpeed + Time.deltaTime;
+			pos.z -= panSpeed;
 		}
-		if(Input.GetKey("d")) 
+		if(Input.GetKeyUp("d")) 
 		{
-			pos.x += panSpeed + Time.deltaTime;
+			pos.x += panSpeed;
 		}
+
+//		if(Input.GetKey("w")) 
+//		{
+//			pos.z += panSpeed + Time.deltaTime;
+//		}
+//		if(Input.GetKey("a")) 
+//		{
+//			pos.x -= panSpeed + Time.deltaTime;
+//		}
+//		if(Input.GetKey("s")) {
+//
+//			pos.z -= panSpeed + Time.deltaTime;
+//		}
+//		if(Input.GetKey("d")) 
+//		{
+//			pos.x += panSpeed + Time.deltaTime;
+//		}
 		pos.x = Mathf.Clamp (pos.x, -panLimit.x, panLimit.x); 
 		pos.z = Mathf.Clamp (pos.z, -panLimit.y, panLimit.y);
 
