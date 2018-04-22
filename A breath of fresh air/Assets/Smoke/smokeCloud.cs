@@ -6,9 +6,11 @@ public class smokeCloud : MonoBehaviour {
 
 	public float _speed = 1f;
 	public float _smokeDamage;
+	public float fleeRadius = 2;
 
 	//GameObject[] _goalLocations;
 	Vector3 _destination;
+
 	float _xMin;
 	float _xMax;
 	float _zMin;
@@ -34,6 +36,24 @@ public class smokeCloud : MonoBehaviour {
 		actualY = transform.position.y;
 		_destination = new Vector3 (Random.Range (_xMin, _xMax), 0, Random.Range (_zMin, _zMax));
 		transform.position = new Vector3(_destination.x, actualY, _destination.z);
+	}
+
+	public void Flee(Vector3 position){
+		Vector3 fleeDirection, newGoal;
+		float x, z;
+
+		fleeDirection = (this.transform.position - position).normalized;
+		newGoal = this.transform.position + fleeDirection * fleeRadius;
+		x = (newGoal.x < _xMin) ? _xMin : newGoal.x;
+		x = (x > _xMax) ? _xMax : x;
+		z = ( newGoal.z < _zMin) ? _zMin : newGoal.z;;
+		z = (z > _zMax) ? _zMax : z;
+		position = new Vector3 (x ,0, z);
+		_destination = position;
+	}
+
+	public void Gather(Vector3 position){
+		_destination = position;
 	}
 
 	void OnTriggerStay(Collider other){

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4449688, g: 0.48872226, b: 0.5422992, a: 1}
+  m_IndirectSpecularColor: {r: 0.444969, g: 0.48872244, b: 0.54229915, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -560,6 +560,7 @@ GameObject:
   - component: {fileID: 199845853}
   - component: {fileID: 199845858}
   - component: {fileID: 199845859}
+  - component: {fileID: 199845860}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -661,6 +662,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panSpeed: 30
   panLimit: {x: 30, y: 40}
+--- !u!114 &199845860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 199845852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0801fdbaf2dab594f9411fb34d462a2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &210564539
 Prefab:
   m_ObjectHideFlags: 0
@@ -1298,7 +1310,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 526598046}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: -35.7}
+  m_LocalPosition: {x: -44.2, y: 0, z: -44.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1637,7 +1649,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 697160253}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 36.4, y: 0, z: -0.6}
+  m_LocalPosition: {x: 44.1, y: 0, z: 44.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3273,32 +3285,6 @@ Prefab:
     - target: {fileID: 4387206165286180, guid: 8455506fb13918643af93ee5c91a92c1, type: 2}
       propertyPath: m_RootOrder
       value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1927323855063140, guid: 8455506fb13918643af93ee5c91a92c1, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114880582559652774, guid: 8455506fb13918643af93ee5c91a92c1,
-        type: 2}
-      propertyPath: _smokeDamage
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4387206165286180, guid: 8455506fb13918643af93ee5c91a92c1, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.57953525
-      objectReference: {fileID: 0}
-    - target: {fileID: 4387206165286180, guid: 8455506fb13918643af93ee5c91a92c1, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.36538404
-      objectReference: {fileID: 0}
-    - target: {fileID: 4387206165286180, guid: 8455506fb13918643af93ee5c91a92c1, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.40951663
-      objectReference: {fileID: 0}
-    - target: {fileID: 198638132468515138, guid: 8455506fb13918643af93ee5c91a92c1,
-        type: 2}
-      propertyPath: InitialModule.startSize.scalar
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8455506fb13918643af93ee5c91a92c1, type: 2}

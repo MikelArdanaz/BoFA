@@ -7,6 +7,8 @@ TagManager:
   - goal
   - smokeGoal
   - fieldBound
+  - npc
+  - smoke
   layers:
   - Default
   - TransparentFX
