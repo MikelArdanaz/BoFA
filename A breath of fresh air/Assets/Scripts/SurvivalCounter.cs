@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SurvivalCounter : MonoBehaviour {
-	GameObject[] NPCs;
+	NPC[] NPCs;
 	// Use this for initialization
 	void Start () {
 		
@@ -12,6 +12,6 @@ public class SurvivalCounter : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		NPCs=FindObjectsOfType<NPC> ();
-		int TotalNPCs=NPCs.GetLength ();
+		int TotalNPCs = NPCs.Length;
 	}
 }
