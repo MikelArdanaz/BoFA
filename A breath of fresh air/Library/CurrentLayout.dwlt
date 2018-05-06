@@ -20,7 +20,11 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
+<<<<<<< HEAD
   m_MinSize: {x: 950, y: 542}
+=======
+  m_MinSize: {x: 950, y: 392}
+>>>>>>> 37f4a5ded66900b194139024bfb3bb7cd1683786
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -104,12 +108,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1280
     height: 655
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
   controlID: 67
+=======
+    width: 1920
+    height: 947
+  m_MinSize: {x: 681, y: 342}
+  m_MaxSize: {x: 12006, y: 8042}
+  vertical: 0
+  controlID: 86
+>>>>>>> 37f4a5ded66900b194139024bfb3bb7cd1683786
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -128,12 +141,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 978
     height: 655
   m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
   controlID: 68
+=======
+    width: 1467
+    height: 947
+  m_MinSize: {x: 404, y: 342}
+  m_MaxSize: {x: 8004, y: 8042}
+  vertical: 1
+  controlID: 87
+>>>>>>> 37f4a5ded66900b194139024bfb3bb7cd1683786
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -152,12 +174,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 978
     height: 384
   m_MinSize: {x: 404, y: 221}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
   controlID: 69
+=======
+    width: 1467
+    height: 555
+  m_MinSize: {x: 404, y: 221}
+  m_MaxSize: {x: 8004, y: 4021}
+  vertical: 0
+  controlID: 88
+>>>>>>> 37f4a5ded66900b194139024bfb3bb7cd1683786
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -174,8 +205,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 242
     height: 384
+=======
+    width: 363
+    height: 555
+>>>>>>> 37f4a5ded66900b194139024bfb3bb7cd1683786
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
@@ -199,8 +235,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 242
     y: 0
+<<<<<<< HEAD
     width: 736
     height: 384
+=======
+    width: 1104
+    height: 555
+>>>>>>> 37f4a5ded66900b194139024bfb3bb7cd1683786
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 14}
@@ -367,24 +408,31 @@ MonoBehaviour:
     height: 363
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 36510000
     m_LastClickedID: 20790
     m_ExpandedIDs: 34d8ffff48ddffff8ae1ffff40e3ffff80e4ffffb0e6ffff42e8ffff32efffff30f1ffff58f2ffff9cf3ffffc0f8ffff92fbffff000000004651000056510000665100006a510000
+=======
+    scrollPos: {x: 0, y: 75}
+    m_SelectedIDs: d4f9ffffb0f9ffff84faffff
+    m_LastClickedID: -1580
+    m_ExpandedIDs: 9efbffff000000000c3e0000
+>>>>>>> 37f4a5ded66900b194139024bfb3bb7cd1683786
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: SmokeCloud
+      m_OriginalName: SmokeCloud
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: -1580
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 0}
     m_SearchString: 
@@ -421,14 +469,14 @@ MonoBehaviour:
     height: 363
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 323.4887150884778
+  lastFramingTime: 2181.855502845625
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 7.8490725, y: -40.958214, z: 25.485302}
+    m_Target: {x: 14.058676, y: -6.570404, z: 21.292742}
     speed: 2
-    m_Value: {x: 7.8490725, y: -40.958214, z: 25.485302}
+    m_Value: {x: 14.058676, y: -6.570404, z: 21.292742}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -452,6 +500,7 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: 0.6036964, y: 0.017710643, z: -0.013411408, w: 0.79691035}
     speed: 2
     m_Value: {x: -0.6036964, y: -0.017710643, z: 0.013411408, w: -0.79691035}
@@ -459,6 +508,15 @@ MonoBehaviour:
     m_Target: 96.304375
     speed: 2
     m_Value: 96.304375
+=======
+    m_Target: {x: -0.5222613, y: -0.055722218, z: 0.034224078, w: -0.8502746}
+    speed: 2
+    m_Value: {x: -0.5222613, y: -0.055722218, z: 0.034224078, w: -0.8502746}
+  m_Size:
+    m_Target: 108.2454
+    speed: 2
+    m_Value: 108.2454
+>>>>>>> 37f4a5ded66900b194139024bfb3bb7cd1683786
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -536,20 +594,34 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
+<<<<<<< HEAD
     - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/Scenes
+=======
+    - Assets/Materials
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Materials
+>>>>>>> 37f4a5ded66900b194139024bfb3bb7cd1683786
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "/Users/mikelillo_1/Dropbox/UPNA/8\xBA Semestre/GitHub_Repo/A
     breath of fresh air"
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 24280000
     m_LastClickedID: 10276
     m_ExpandedIDs: 000000007427000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: 963d0000
+    m_LastClickedID: 15766
+    m_ExpandedIDs: 000000006e270000
+>>>>>>> 37f4a5ded66900b194139024bfb3bb7cd1683786
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -602,8 +674,13 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+=======
+    m_SelectedInstanceIDs: 60f9ffff
+    m_LastClickedInstanceID: -1696
+>>>>>>> 37f4a5ded66900b194139024bfb3bb7cd1683786
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
