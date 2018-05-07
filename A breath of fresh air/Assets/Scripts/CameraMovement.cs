@@ -8,19 +8,19 @@ public class CameraMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Vector3 pos = transform.position;
-		if(Input.GetKeyUp("w")) 
+		if(Input.GetKey(KeyCode.UpArrow)) 
 		{
 			pos.z += panSpeed;
 		}
-		if(Input.GetKeyUp("a")) 
+		if(Input.GetKey(KeyCode.LeftArrow)) 
 		{
 			pos.x -= panSpeed;
 		}
-		if(Input.GetKeyUp("s")) {
+		if(Input.GetKey(KeyCode.DownArrow)) {
 
 			pos.z -= panSpeed;
 		}
-		if(Input.GetKeyUp("d")) 
+		if(Input.GetKey(KeyCode.RightArrow)) 
 		{
 			pos.x += panSpeed;
 		}

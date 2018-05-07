@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33790759754120792}
   - component: {fileID: 136442520926684666}
   - component: {fileID: 23475804462968710}
+  - component: {fileID: 114377899844429366}
   m_Layer: 0
   m_Name: FleeCylinder
   m_TagString: Untagged
@@ -83,6 +84,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1726522909098884}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114377899844429366
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1726522909098884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e39a6a2e243b0a45aef94fb6f6dba6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &136442520926684666
 CapsuleCollider:
   m_ObjectHideFlags: 1
